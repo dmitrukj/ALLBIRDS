@@ -1,0 +1,85 @@
+.header.container {
+  display: flex;
+  flex-direction: row;
+  padding: 21px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .men, .women, .arrivals, .sustan, .stores {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 1.7px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-black;
+  }
+
+    .logo {
+      width: 120px;
+      height: 38px;
+      margin-left: 360px;
+      margin-right: 270px;
+    }
+
+  .men {
+    margin-left: 10px;
+  }
+  .women, .arrivals {
+    margin-left: 34px;
+  }
+  .sustan {
+    margin-right: 35px ;
+  }
+  .stores {
+    margin-right: 39px;
+  }
+}
+.links {
+  display: flex;
+  flex-direction: row;
+
+    .link1 {
+    margin-left: 10px;
+  }
+    .link2, .link3 {
+      margin-left: 14px;
+    }
+}
+@media screen and (max-width: 1350px){
+  .header.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sustan {
+    margin-left: 34px;
+  }
+  .logo {
+   display: none;
+  }
+
+}
+@media screen and (max-width: 645px) {
+  .header.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .men, .women, .arrivals, .sustan, .stores {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+}
